@@ -16,7 +16,7 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(500)
 
-        local playerPed = GetPlayerPed(-1)
+        local playerPed = PlayerPedId()
         local playerCoords = GetEntityCoords(playerPed)
         local inZone = false
 
@@ -42,7 +42,7 @@ function RunTeleportLogic()
     while activeZone do
         Citizen.Wait(0)
 
-        local playerPed = GetPlayerPed(-1)
+        local playerPed = PlayerPedId()
         local playerCoords = GetEntityCoords(playerPed)
 
         if activeZone and #(playerCoords - activeZone.center) <= activeZone.radius and playerCoords.z < activeZone.center.z then
