@@ -1,1 +1,1 @@
-More scripts: https://international-systems.tebex.io/
+More scripts: https://iconmodz.tebex.io/
